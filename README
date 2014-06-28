@@ -1,0 +1,1 @@
+This repository contains the Python and Processing code used to control an Arduino from a Raspberry Pi. The Arduino controls a Sainsmart 4 channel relay, controlling a 24v solonoid valve.
