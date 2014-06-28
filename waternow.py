@@ -18,7 +18,8 @@ ser.write('0')
 time.sleep(600)
 ser.write('1')
 
+tnow = time.localtime()
+timestring = "{}.{}.{}.{}.{}.{}".format(tnow.tm_year, tnow.tm_mon, tnow.tm_mday, tnow.tm_hour, tnow.tm_min, tnow.tm_sec)
 print("{}: Water Off\n".format(timestring))
-
 fid.write("{}: Water Off\n".format(timestring))
 fid.close()
