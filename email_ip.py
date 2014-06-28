@@ -11,9 +11,9 @@ from email.MIMEImage import MIMEImage
 from email.Encoders import encode_base64
 
 def sendMail(subject, text, *attachmentFilePaths):
-    gmailUser = 'wolf809@gmail.com'
-    gmailPassword = 'uovhtzhqrjkfenkv'
-    recipient = 'wolf809@gmail.com'
+    gmailUser = 'xxxxxxxx@xxxxxx.xxx'
+    gmailPassword = 'xxxxxxxxxxxxxx'
+    recipient = 'xxxxxxxx@xxxxxx.xxx'
     msg = MIMEMultipart()
     msg['From'] = gmailUser
     msg['To'] = recipient
