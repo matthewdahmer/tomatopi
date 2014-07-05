@@ -1,5 +1,4 @@
 
-import urllib2
 import os
 import smtplib
 import mimetypes
@@ -69,18 +68,4 @@ def getAttachment(attachmentFilePath):
     
     return attachment
 
-#fqn = os.uname()[1]
 
-def email_ip_addr():
-    ext_ip = urllib2.urlopen('http://icanhazip.com').read()
-    sendMail('IP', ext_ip)
-
-
-# s=smtplib.SMTP()
-# s.connect("smtp.gmail.com",465)
-# s.ehlo()
-# s.starttls()
-# s.login("wolf809@gmail.com", "043v0lut10n")
-# s.sendmail("wolf809@gmail.com", "wolf809@gmail.com", ext_ip)
-
-# mail('wolf809@gmail.com', ext_ip)

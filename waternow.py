@@ -1,10 +1,16 @@
 import serial
 import time
+import urllib2
 import email_ip
+
+def email_ip_addr():
+    ext_ip = urllib2.urlopen('http://icanhazip.com').read()
+    email_ip.sendMail('IP', ext_ip)
+
 
 fid = open("log.txt", "w")
 
-email_ip.email_ip_addr()
+email_ip_addr()
 
 tnow = time.localtime()
 
